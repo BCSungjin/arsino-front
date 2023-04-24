@@ -24,7 +24,7 @@ function Total() {
   const [newChart, setNewChart] = useState([]);
   const [setting, setSetting] = useState(null);
   useEffect(() => {
-    const ws = new WebSocket("ws://66.42.38.167:8080");
+    const ws = new WebSocket("wss://amg-backend.runeterra.info");
     setSocket(ws);
     // DB WS
     ws.onopen = () => {
