@@ -119,10 +119,10 @@ const CandlestickChart = ({ chart, newChart }) => {
     };
     fetchChartData();
   }, []);
-
+  console.log("series", series);
   const updateXAxisRange = () => {
     const currentTime = Date.now();
-    const threeHoursAgo = currentTime - 3 * 60 * 60 * 1000;
+    const threeHoursAgo = currentTime - 1 * 60 * 60 * 1000;
 
     setOptions((prevOptions) => ({
       ...prevOptions,
